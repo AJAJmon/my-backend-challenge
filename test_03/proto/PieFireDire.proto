@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package services;
+option go_package="./services";
+
+service PieFireDire {
+    rpc Summary(BeefRequest) returns(BeefResponse);
+}
+
+message BeefRequest {
+}
+
+message BeefResponse  {
+    Beef beef = 1;
+}
+
+message Beef {
+    int32 t_bone = 1;
+    int32 fatback = 2;
+    int32 pastrami = 3;
+    int32 pork = 4;
+    int32 meatloaf = 5;
+    int32 jowl = 6;
+    int32 enim = 7;
+    int32 bresaola = 8;
+}
+
