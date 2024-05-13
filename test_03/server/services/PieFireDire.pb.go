@@ -110,7 +110,7 @@ type Beef struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	TBone    int32 `protobuf:"varint,1,opt,name=t_bone,json=tBone,proto3" json:"t_bone,omitempty"`
+	TBone    int32 `protobuf:"varint,1,opt,name=t-bone,json=tBone,proto3" json:"t-bone,omitempty"`
 	Fatback  int32 `protobuf:"varint,2,opt,name=fatback,proto3" json:"fatback,omitempty"`
 	Pastrami int32 `protobuf:"varint,3,opt,name=pastrami,proto3" json:"pastrami,omitempty"`
 	Pork     int32 `protobuf:"varint,4,opt,name=pork,proto3" json:"pork,omitempty"`
