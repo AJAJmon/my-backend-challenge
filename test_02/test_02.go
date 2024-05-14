@@ -55,10 +55,10 @@ func checkAnsNum(input string, num []int) int {
 			char := input[i]
 			switch char {
 			case '=':
-				if i != inputLength-1 {
-					num[i] = num[i+1]
-				} else {
+				if num[i] > num[i+1] {
 					num[i+1] = num[i]
+				} else {
+					num[i] = num[i+1]
 				}
 			}
 		}
